@@ -1,0 +1,205 @@
+.career-services-holder .menu {
+    padding: 0;
+    list-style: none;
+    position: relative;
+    margin: 0px;
+    width: 70%;
+    height: 0;
+    padding-top: 70%;
+    -webkit-clip-path: circle(35% at 50% 50%);
+            clip-path: circle(35% at 50% 50%);
+  }
+  
+  
+  .career-services-holder .menu div.nav-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* try this one in Chrome/Opera/Safari */
+    -webkit-clip-path: polygon(50% 50%, 100% 50%, 100% 0, 77% 0%);
+            clip-path: polygon(50% 50%, 100% 50%, 100% 0, 77% 0%);
+            transition: 0.3s ease-in;
+  }
+  
+  .career-services-holder .menu div.nav-link a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .career-services-holder .nav-tabs .nav-link.one {
+    background-color: #453960 !important;
+    transform: rotate(0deg);
+  }
+  
+  .career-services-holder .nav-tabs .nav-link.two {
+    background-color: #584878 !important;
+    transform: rotate(-60deg);
+  }
+  
+  .career-services-holder .nav-tabs .nav-link.three {
+    background-color: #75629a !important;
+    transform: rotate(-120deg);
+  }
+  
+  .career-services-holder .nav-tabs .nav-link.four {
+    background-color: #927dbb !important;
+    transform: rotate(-180deg);
+  }
+  
+  .career-services-holder .nav-tabs .nav-link.five {
+    background-color: #9c86c7 !important;
+    transform: rotate(-240deg);
+  }
+  
+  .career-services-holder .nav-tabs .nav-link.six {
+    background-color: #ab95d7 !important;
+    transform: rotate(-300deg);
+  }
+  
+  .career-services-holder .nav-tabs .nav-link.active {
+    background-color: #fff !important;
+  }
+  
+  .career-services-holder .nav-tabs .nav-link.active p {
+    color: #000;
+  }
+  
+  .career-services-holder .icon {
+    position: absolute;
+    /* exact values here depend on what you are placing inside the items (icon, image, text, etc.) */
+    right: 18%;
+  top: 33%;
+    /* make sure it it rotated enough; angle of rotation = angle of the sector itself */
+    transform: rotate(60deg);
+    /* style further as needed */
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 0;
+    max-width: 80px;
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  .career-services-holder {
+    position: relative;
+    width: 550px;
+    height: 550px;
+  }
+  
+  .career-services-holder .center-white {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    background-color: #fff;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    z-index: 9;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .center-shadow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 385px;
+    height: 385px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .career-services-holder .circle-holder {
+    transform: rotate(90deg);
+    transform: rotate(30deg);
+    transform-origin: center center;
+    overflow: hidden;
+    transition: transform 0.6s ease-in;
+  }
+  
+  .career-sr-list {
+    background-color: #e6ebff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .career-sr-list .list-holder p:first-child {
+    font-weight: 600;
+  }
+  
+  .career-sr-list .list-holder p:last-child {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .career-service-result h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  .career-service-result p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 0;
+  }/*# sourceMappingURL=main.css.map */
+  
+  .career-service-result-main{
+  overflow: hidden;
+  }
+  
+  
+  @media all and (max-width: 360px) {
+    .career-services-holder .menu {
+      width: 350px;
+      height: 350px;
+      padding: 0;
+    }
+  }
+  @media all and (min-width: 700px) {
+    .career-services-holder .menu {
+      width: 550px;
+      height: 550px;
+      padding: 0;
+    }
+  }
+  @media all and (max-width: 480px) {
+  
+    .career-services-holder {
+      width: 450px;
+      height: 450px;
+    }
+    .career-services-holder .menu {
+      width: 450px;
+      height: 450px;
+      padding: 0;
+    }
+    .center-shadow {
+      width: 315px;
+      height: 315px;
+    }
+    .career-services-holder .center-white {
+      width: 200px;
+      height: 200px;
+    }
+    .career-services-holder .icon{
+      font-size: 11px;
+  letter-spacing: 0.8px;
+  right: 16%;
+  top: 33%;
+  transform: rotate(61deg);
+    }
+    .career-service-result-main{
+      margin-top: -100px;
+    }
+    .career-services-holder .circle-holder {
+      transform: rotate(120deg);
+    }
+  }
