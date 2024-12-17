@@ -203,3 +203,9 @@
       transform: rotate(120deg);
     }
   }
+  .section-padY{
+    padding: 60px 0px;
+  }
+  .main-section{
+    background: #f3f5fd;
+  }
